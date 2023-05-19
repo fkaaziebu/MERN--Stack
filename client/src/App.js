@@ -2,14 +2,12 @@ import React, { useState } from "react";
 import Post from "./Post";
 import PostList from "./PostList";
 
-
 function App() {
   const [post, setPost] = useState([]);
   console.log(post);
 
   return (
     <div className="App">
-      
       {/* 
       1. Post field
       2. Post Listing
@@ -18,7 +16,7 @@ function App() {
       */}
 
       <Post post={post} setPost={setPost} />
-      <PostList post={post} />     
+      <PostList post={post} />
     </div>
   );
 }
