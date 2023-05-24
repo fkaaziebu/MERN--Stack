@@ -7,7 +7,7 @@ function App() {
   console.log(post);
 
   return (
-    <div className="App">
+    <div className="container d-flex flex-column justify-content-center align-items-center">
       {/* 
       1. Post field
       2. Post Listing
@@ -16,6 +16,9 @@ function App() {
       */}
 
       <Post post={post} setPost={setPost} />
+
+      <div className="w-100 bg-dark p-1"/>
+      
       <PostList post={post} />
     </div>
   );

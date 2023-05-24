@@ -10,15 +10,22 @@ function Post({ post, setPost }) {
         setMsg("");
       }}
     >
-      <div>
-        <label for="post">Post</label>
+      <div className="mb-3">
+        <label for="post" className="form-label fs-1">
+          Post
+        </label>
         <input
           value={msg}
           onChange={(e) => setMsg(e.target.value)}
           id="post"
           name="post"
+          className="form-control fs-2 p-3"
         />
-        <button type="submit">Submit</button>
+      </div>
+      <div className="mb-3">
+        <button type="submit" className="btn btn-primary p-3 fs-3">
+          Submit
+        </button>
       </div>
     </form>
   );
